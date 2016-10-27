@@ -23,13 +23,16 @@ function isPrime(num){
     }
   }
   return true;
-};
-
-
+}
 
 function primes(max){
   var primeArr = [];
   for(var i = 0; i < max; i++){
-    isPrime(i) ? primeArr.push(i);
+    if(isPrime(i)){
+    	primeArr.push(i);
+    }
   }
+  return primeArr;
 }
+
+console.log(primes(1000));
