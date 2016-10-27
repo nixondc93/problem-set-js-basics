@@ -21,3 +21,10 @@
 */
 
 // YOUR CODE HERE
+
+var isPalindrome = function(str){
+  var strReversed = str.split('').reverse().join('');
+  return str === strReversed;
+};
+
+console.log(isPalindrome("racecar"));
