@@ -18,12 +18,12 @@ var third_word = ["wagtail", "whey-face", "vassal", "varlet", "strumpet", "skain
 
 // YOUR CODE HERE
 
-function generateInsults(n = 3, name = null){
+function generateInsults(n, name = null){
 	var insult = '';
 	var wordBank = [first_word, second_word, third_word];
 
 	if(name !== null){
-		insult = "Why Justin, you ";
+		insult = "Why " + name + ", you ";
 	}
 
 	for(var i = 1; i <= n; i++){
@@ -33,4 +33,4 @@ function generateInsults(n = 3, name = null){
 }
 
 
-console.log(generateInsults());
+console.log(generateInsults(6, "Derry"));

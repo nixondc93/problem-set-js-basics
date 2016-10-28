@@ -22,9 +22,22 @@
 
 // YOUR CODE HERE
 
+
+
+
 var isPalindrome = function(str){
   var strReversed = str.split('').reverse().join('');
   return str === strReversed;
 };
 
 console.log(isPalindrome("racecar"));
+
+
+var palindromeInSentence = function(str){
+  strArr = str.replace(/^a-zA-z/+g, '').split(' ')
+  for(var i = 0; i < strArr.length; i++){
+    if(isPalindrome(strArr[i]){
+      return true;
+    }
+  }
+}
